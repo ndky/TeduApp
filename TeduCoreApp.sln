@@ -5,7 +5,23 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeduCoreApp", "TeduCoreApp\TeduCoreApp.csproj", "{75E923D5-BFE8-4912-9C8B-10B28E8BFCC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduCoreApp.Application", "TeduCoreApp.Application\TeduCoreApp.Application.csproj", "{E69F18A9-84D7-4B6B-8778-5CB523E37F1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeduCoreApp.Application", "TeduCoreApp.Application\TeduCoreApp.Application.csproj", "{E69F18A9-84D7-4B6B-8778-5CB523E37F1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduCoreApp.Data", "TeduCoreApp.Data\TeduCoreApp.Data.csproj", "{E87D721E-BC03-4BFE-B47A-A486880C9890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduCoreApp.Data.EF", "TeduCoreApp.Data.EF\TeduCoreApp.Data.EF.csproj", "{D4931AA3-45A5-4134-8348-E3B219509BEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduCoreApp.Utilities", "TeduCoreApp.Utilities\TeduCoreApp.Utilities.csproj", "{1097A025-C42C-449E-BF9A-3B55CD7FC978}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduCoreApp.Infrastructure", "TeduCoreApp.Infrastructure\TeduCoreApp.Infrastructure.csproj", "{4A06264D-CC2D-4FFA-B2BE-D856516EBB1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{36B9B5B5-8AC1-498C-9B78-1771E6B6F5EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{5F8C96E9-5834-4572-9769-181BC628AF43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{FF37DD9B-9CC7-42F1-898E-F8BB195EF3C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{C94E7408-2CF8-42AA-A0CE-4044183D3A03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +37,33 @@ Global
 		{E69F18A9-84D7-4B6B-8778-5CB523E37F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E69F18A9-84D7-4B6B-8778-5CB523E37F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E69F18A9-84D7-4B6B-8778-5CB523E37F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E87D721E-BC03-4BFE-B47A-A486880C9890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E87D721E-BC03-4BFE-B47A-A486880C9890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E87D721E-BC03-4BFE-B47A-A486880C9890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E87D721E-BC03-4BFE-B47A-A486880C9890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4931AA3-45A5-4134-8348-E3B219509BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4931AA3-45A5-4134-8348-E3B219509BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4931AA3-45A5-4134-8348-E3B219509BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4931AA3-45A5-4134-8348-E3B219509BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1097A025-C42C-449E-BF9A-3B55CD7FC978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1097A025-C42C-449E-BF9A-3B55CD7FC978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1097A025-C42C-449E-BF9A-3B55CD7FC978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1097A025-C42C-449E-BF9A-3B55CD7FC978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A06264D-CC2D-4FFA-B2BE-D856516EBB1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A06264D-CC2D-4FFA-B2BE-D856516EBB1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A06264D-CC2D-4FFA-B2BE-D856516EBB1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A06264D-CC2D-4FFA-B2BE-D856516EBB1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75E923D5-BFE8-4912-9C8B-10B28E8BFCC8} = {36B9B5B5-8AC1-498C-9B78-1771E6B6F5EE}
+		{E69F18A9-84D7-4B6B-8778-5CB523E37F1E} = {5F8C96E9-5834-4572-9769-181BC628AF43}
+		{E87D721E-BC03-4BFE-B47A-A486880C9890} = {FF37DD9B-9CC7-42F1-898E-F8BB195EF3C6}
+		{D4931AA3-45A5-4134-8348-E3B219509BEF} = {FF37DD9B-9CC7-42F1-898E-F8BB195EF3C6}
+		{1097A025-C42C-449E-BF9A-3B55CD7FC978} = {C94E7408-2CF8-42AA-A0CE-4044183D3A03}
+		{4A06264D-CC2D-4FFA-B2BE-D856516EBB1F} = {C94E7408-2CF8-42AA-A0CE-4044183D3A03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF5D8CD8-0657-4CD3-9F21-5973F24D0E31}
